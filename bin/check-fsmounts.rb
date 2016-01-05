@@ -52,7 +52,8 @@ class CheckFsMounts < Sensu::Plugin::Check::CLI
          :description => "Warn instead of throwing a critical failure",
          :short => "-w",
          :long => "--warn",
-         :boolean => false
+         :boolean => true,
+         :default => false
 
   option :dryrun,
          :description => "Do not send events to sensu client socket",
